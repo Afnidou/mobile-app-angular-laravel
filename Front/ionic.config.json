@@ -1,0 +1,7 @@
+{
+  "name": "ngOpenLayers-master",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

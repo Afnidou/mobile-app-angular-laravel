@@ -1,0 +1,48 @@
+
+
+      <ol-map lat="32" lon="6" zoom="3"width="410px"height="620px"style="float:left;margin-right:0px;">
+   <div id="map" class="ma">
+
+  <ol-control control="FullScreen">
+  </ol-control>
+  <ol-control control="ScaleLine">
+  </ol-control>
+  <ol-control control="Zoom">
+  </ol-control>
+  <ol-control control="ZoomToExtend">
+  </ol-control>
+  <ol-control control="OverviewMap">
+  </ol-control>
+</div>
+<form >
+
+
+  <div class ="formGroup">
+    <input  type="hidden"  class="form-control" id="wktgeom"   name="geometrie" >
+    </div>
+    <div class ="formGroup">
+      <input  type="hidden" class="form-control"   name="surface" value={{data.surface}}  id="sur">
+      </div>
+    <div class ="formGroup">
+      <input  type="hidden" class="form-control"  value={{data.perimetre}}  name="perimetre" id="peri">
+      </div>
+  <div class ="formGroup">
+
+  <input  type="hidden"  class="form-control" name="categorie" value="{{data.Categorie}}" id="cat" >
+  </div>
+
+  <div class ="formGroup">
+    <input  type="hidden" class="form-control"  name="Designation" id="desi"  value="{{data.Designation}}"   >
+  </div>
+  <div class ="formGroup">
+    <input  type="hidden"  class="form-control"   name="name" id="nm" value="{{data.name}}"   >
+  </div>
+<!-- <button type="button" class="btn solid" (click)="submit()" >submit</button> -->
+
+<ion-button  expand="block" (click)="submit()">Enregistrer</ion-button>
+<ion-button  expand="block" (click)="do()">Visualiser</ion-button>
+</form>
+</ol-map>
+
+
+

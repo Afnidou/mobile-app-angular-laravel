@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="forms-container">
+    <div class="signin-signup">
+
+
+      <form action="#" class="sign-in-form">
+        <div class="head">
+        <h4 class="title2">Enter the specifications of the feature</h4>
+        </div>
+        <div [formGroup]="form">
+          <div class ="formGroup">
+        <div class="input-field">
+          <i class="fas fa-use"></i>
+          <input type="text" class="form-control" placeholder="Designation" formControlName="Designation"/>
+        </div>  </div>
+        <div class ="formGroup">
+        <div class="input-field">
+          <i class="fas fa-use"></i>
+          <input type="text"  class="form-control" placeholder="Categorie" formControlName="Categorie"  />
+        </div> </div>
+        <div class ="formGroup">
+        <div class="input-field">
+          <i class="fas fa-use"></i>
+          <input type="text"   class="form-control" placeholder="name" formControlName="name" />
+        </div></div>
+        <div class="input-field">
+          <i class="fas fa-use"></i>
+          <input type="text" placeholder="Surface" formControlName="surface"/>
+        </div>
+        <div class="input-field">
+          <i class="fas fa-use"></i>
+          <input type="text" placeholder="Perimetre" formControlName="perimetre"/>
+        </div>
+
+  <button class="btn solid" (click)="gotoNext()" >Ajouter la geometrie</button>
+
+
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

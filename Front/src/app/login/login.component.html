@@ -1,0 +1,29 @@
+
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+
+          <form action="#" class="sign-in-form">
+            <div class="head">
+            <h4 class="title">Welcome to ETAFAT!</h4>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.7hn9PM-82mj6R5Bs_ti9-wAAAA&pid=Api&P=0&w=167&h=143" alt="">
+          </div>
+          <div [formGroup]="forma">
+          <div class ="formGroup">
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" class="form-control" formControlName="email" placeholder="Username" id="email"/>
+            </div></div>
+            <div class ="formGroup">
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" class="form-control" formControlName="password" placeholder="Password" id="pas"/>
+            </div></div>
+
+            <input type="submit" value="Login" class="btn solid" (click)="login()"/>
+         </div> </form>
+        </div>
+      </div>  
+    </div>     
+
+

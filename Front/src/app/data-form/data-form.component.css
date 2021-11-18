@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+
+
+.signin-signup {
+  position: absolute;
+  top: 80px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.title2 {
+  /* Enter the specifications of the feature */
+
+
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 115.69%;
+/* or 21px */
+text-align: center;
+letter-spacing: 0.06em;
+
+color: rgba(0, 0, 0, 0.75);
+
+}
+.head{
+  margin-bottom: 130px;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 325px;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 51px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  /* Enter your full name */
+
+
+
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 137.19%;
+/* identical to box height, or 18px */
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+color: rgba(0, 0, 0, 0.7);
+
+
+}
+
+.btn {
+  width: 325px;
+  background-color: #50C2C9;
+  border: none;
+  outline: none;
+  height: 62px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 870px) {
+  .container {
+    height: 100vh;
+  }
+  .signin-signup {
+    width: 100%;
+  }
+
+
+}
